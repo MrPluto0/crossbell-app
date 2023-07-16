@@ -35,7 +35,7 @@ export function Feed() {
 
   const hasNoResult = !isLoading && !data?.pages.some((p) => p.count > 0);
 
-  console.log(data, hasNextPage, isFetchingNextPage, isLoading);
+  console.log(data);
 
   return (
     <div className="mx-30">
@@ -52,7 +52,7 @@ export function Feed() {
                     ("anonymous" as string)}
                 </div>
                 {/* Best way is Markdown-Render */}
-                <p className="whitespace-break-spaces font-serif">
+                <p className="whitespace-break-spaces font-serif break-all">
                   {item.metadata?.content?.content}
                 </p>
               </div>

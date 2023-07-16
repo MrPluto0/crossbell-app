@@ -14,7 +14,7 @@ export default function IndexPage() {
           <Connection />
           <Note />
         </div>
-        <div className="basis-3/4 pl-20">
+        <div className="basis-3/4 max-w-5xl pl-20">
           <Feed />
         </div>
       </div>
