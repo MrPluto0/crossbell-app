@@ -47,6 +47,7 @@ export function Feed() {
               <CharacterAvatar size="48px" characterId={item.characterId} />
               <div>
                 <div className="font-mono text-lg text-sky-600 font-bold mb-2">
+                  {/* @ts-ignore */}
                   {item.metadata?.content?.authors?.[0] ||
                     ("anonymous" as string)}
                 </div>
